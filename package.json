@@ -1,0 +1,19 @@
+{
+  "name": "meantutorial",
+  "version": "1.0.0",
+  "description": "MEAN app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aqeel bahoo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.13",
+    "morgan": "^1.9.0"
+  }
+}

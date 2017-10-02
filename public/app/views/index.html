@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--ANGULAR MAIN FILES-->
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+
+    <!--ANGULAR CONFIG FILES-->
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <!--ANGULAR CONTROLLER-->
+    <script src="app/controllers/userCtrl.js"></script>
+    <script src="app/controllers/mainCtrl.js"></script>
+
+    <!--ANGULAR SERVICES-->
+    <script src="app/services/userServices.js"></script>
+    <script src="app/services/authServices.js"></script>
+</head>
+
+<body ng-app="userApp" ng-controller="mainCtrl as main">
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <ul class="nav navbar-nav ">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="#" ng-click="main.logout()">Logout</a></li>
+            <li><a href="/profile">Hello {{main.username}}</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div ng-view></div>
+</div>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
